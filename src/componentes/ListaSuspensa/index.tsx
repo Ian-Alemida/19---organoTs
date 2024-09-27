@@ -7,13 +7,13 @@ interface ListaSuspensaProps{
     valor: string;
     itens: string[]
 }
-const ListaSuspensa = (props: ListaSuspensaProps) => {
+const ListaSuspensa = ({aoAlterado, itens, label, valor, obrigatorio}: ListaSuspensaProps) => {
     return (
         <div className='lista-suspensa'>
-            <label>{props.label}</label>
-            <select onChange={evento => props.aoAlterado(evento.target.value)} required={props.obrigatorio} value={props.valor}>
+            <label>{label}</label>
+            <select onChange={evento => aoAlterado(evento.target.value)} required={obrigatorio} value={valor}>
                 <option value=""></option>
-                {props.itens.map(item => {
+                {itens.map(item => {
                     return <option key={item}>{item}</option>
                 })}
             </select>

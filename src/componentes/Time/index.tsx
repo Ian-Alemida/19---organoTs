@@ -1,4 +1,5 @@
-import IColaborador from '../../Interfaces/Icolaborador';
+
+import IColaborador from '../../Interfaces/IColaborador';
 import Colaborador from '../Colaborador';
 import './Time.css'
 
@@ -27,7 +28,7 @@ const Time = (props: TimeProps) => {
                     }
             </div>
         </section> 
-        : ''
+        : <></>
     )
 }
 

@@ -3,7 +3,7 @@ import Botao from '../Botao'
 import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
-import IColaborador from '../../Interfaces/Icolaborador'
+import IColaborador from '../../Interfaces/IColaborador'
 
 interface FormularioProps{
     aoColaboradorCadastrado: (colaborador: IColaborador) => void
